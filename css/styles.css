@@ -523,3 +523,57 @@ footer {
 .feature-card:hover .card-glow {
   opacity: 1;
 }
+
+
+/*Logo*/
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* importante */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.logo-pepes {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+.circle {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border: 2px solid rgba(0,0,0,0.05);
+}
+
+.circle {
+  position: relative;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.logo-pepes {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.circle:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow:
+    0 18px 35px rgba(78, 46, 20, 0.25),
+    0 0 25px rgba(184, 122, 49, 0.35);
+}
+
+.circle:hover .logo-pepes {
+  transform: scale(1.08) rotate(-2deg);
+  filter: drop-shadow(0 8px 12px rgba(78, 46, 20, 0.28));
+}
+
+.logo-pepes {
+  animation: logoFloat 4s ease-in-out infinite;
+}
