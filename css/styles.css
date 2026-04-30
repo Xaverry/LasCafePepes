@@ -526,32 +526,20 @@ footer {
 
 
 /*Logo*/
-
-.circle {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* importante */
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.logo-pepes {
-  width: 90%;
-  height: auto;
-  object-fit: contain;
-}
-
-.circle {
-  background: linear-gradient(145deg, #ffffff, #f0f0f0);
-  border: 2px solid rgba(0,0,0,0.05);
-}
+/* Logo */
 
 .circle {
   position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border: 2px solid rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
@@ -559,6 +547,7 @@ footer {
   width: 90%;
   height: auto;
   object-fit: contain;
+  animation: logoFloat 4s ease-in-out infinite;
   transition: transform 0.45s ease, filter 0.45s ease;
 }
 
@@ -572,8 +561,4 @@ footer {
 .circle:hover .logo-pepes {
   transform: scale(1.08) rotate(-2deg);
   filter: drop-shadow(0 8px 12px rgba(78, 46, 20, 0.28));
-}
-
-.logo-pepes {
-  animation: logoFloat 4s ease-in-out infinite;
 }
